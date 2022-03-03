@@ -1,4 +1,8 @@
 $colorbg: linear-gradient(to bottom, #1a9, #189);
+@mixin imagenes ($float) {
+    position: relative;
+    float: $float;
+}
 
 
 .index-article {
@@ -12,8 +16,7 @@ $colorbg: linear-gradient(to bottom, #1a9, #189);
                 margin: 50px 10px;
                 transition: 1.5s;
                 .index-card-img {
-                    position: relative;
-                    float: left;
+                    @include imagenes(left)
                     transform: translate(40px);
                     width: 110px;
                     padding: 10px;
